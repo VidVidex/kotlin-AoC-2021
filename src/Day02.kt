@@ -36,12 +36,12 @@ fun main() {
         return horizontal * depth
     }
 
-    // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day02_test.txt")
+    // Test if implementation meets criteria from the description
+    val testInput = readInputToStringArray("Day02_test.txt")
     check(part1(testInput) == 150)
     check(part2(testInput) == 900)
 
-    val input = readInput("Day02.txt")
-    println(part1(input))
-    println(part2(input))
+    val input = readInputToStringArray("Day02_input.txt")
+    println("Solution to part 1: " + part1(input))
+    println("Solution to part 2: " + part2(input))
 }
