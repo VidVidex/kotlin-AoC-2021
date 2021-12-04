@@ -8,11 +8,9 @@ import java.security.MessageDigest
 fun readInput(name: String) = File("src", name).readLines()
 
 fun readInputToIntArr(name: String): List<Int> {
-    val input = readInput(name)
-
     val intInput = ArrayList<Int>()
 
-    for (value in input)
+    for (value in readInput(name))
         intInput.add(value.toInt())
 
     return intInput
