@@ -68,11 +68,11 @@ fun main() {
     }
 
     // Test if implementation meets criteria from the description
-    parseInput(readInputToStringArray("Day04_test.txt"))
+    parseInput(readInput("Day04_test.txt"))
     check(part1(numbers, grids) == 4512)
     check(part2(numbers, grids) == 1924)
 
-    parseInput(readInputToStringArray("Day04_input.txt"))
+    parseInput(readInput("Day04_input.txt"))
     println("Solution to part 1: " + part1(numbers, grids))
     println("Solution to part 2: " + part2(numbers, grids))
 }

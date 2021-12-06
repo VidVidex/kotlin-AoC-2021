@@ -1,7 +1,7 @@
 fun main() {
     fun part1(input: List<String>, days: Int): Long {
 
-        val fish = readInputToIntArray(input[0].split(",")).toMutableList()
+        val fish = stringArrayToIntArray(input[0].split(",")).toMutableList()
 
         val population = LongArray(9) { 0 }
 
@@ -28,11 +28,11 @@ fun main() {
     }
 
     // Test if implementation meets criteria from the description
-    val testInput = readInputToStringArray("Day06_test.txt")
+    val testInput = readInput("Day06_test.txt")
     check(part1(testInput, 80) == 5934L)
     check(part1(testInput, 256) == 26984457539L)
 
-    val input = readInputToStringArray("Day06_input.txt")
+    val input = readInput("Day06_input.txt")
     println("Solution to part 1: " + part1(input, 80))
     println("Solution to part 2: " + part1(input, 256))
 }

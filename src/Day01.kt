@@ -38,11 +38,11 @@ fun main() {
     }
 
     // Test if implementation meets criteria from the description
-    val testInput = readInputToIntArray("Day01_test.txt")
+    val testInput = stringArrayToIntArray(readInput("Day01_test.txt"))
     check(part1(testInput) == 7)
     check(part2(testInput) == 5)
 
-    val input = readInputToIntArray("Day01_input.txt")
+    val input = stringArrayToIntArray(readInput("Day01_input.txt"))
     println("Solution to part 1: " + part1(input))
     println("Solution to part 2: " + part2(input))
 }

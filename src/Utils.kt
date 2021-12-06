@@ -5,17 +5,19 @@ import java.security.MessageDigest
 /**
  * Reads lines from the given input txt file.
  */
-fun readInputToStringArray(name: String) = File("src", name).readLines()
+fun readInput(name: String) = File("src", name).readLines()
 
-fun readInputToIntArray(name: String): List<Int> {
+/**
+ * Converts list strings to list of ints
+ */
+fun stringArrayToIntArray(list: List<String>): List<Int> {
     val intInput = ArrayList<Int>()
 
-    for (value in readInputToStringArray(name))
+    for (value in list)
         intInput.add(value.toInt())
 
     return intInput
 }
-
 
 /**
  * Converts string to md5 hash.
