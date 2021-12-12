@@ -5,7 +5,7 @@ fun main() {
         for (value in input) {
             if (value > oldValue)
                 numberOfIncreases++
-            oldValue = value;
+            oldValue = value
         }
 
         return numberOfIncreases

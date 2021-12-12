@@ -7,7 +7,7 @@ fun main() {
 
             for (digit in entry.output)
                 if (digit.length == 2 || digit.length == 4 || digit.length == 3 || digit.length == 7)
-                    count++;
+                    count++
         }
         return count
     }

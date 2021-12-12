@@ -12,7 +12,7 @@ fun main() {
                 "up" -> depth -= parts[1].toInt()
             }
         }
-        return horizontal * depth;
+        return horizontal * depth
     }
 
     fun part2(input: List<String>): Int {

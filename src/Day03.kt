@@ -5,7 +5,7 @@ fun main() {
 
         for (value in list)
             if (value[index] == char)
-                charCount++;
+                charCount++
 
         return charCount
     }
@@ -31,8 +31,8 @@ fun main() {
 
     fun part2(input: List<String>): Int {
 
-        var oxygenList = input.toList();
-        var co2List = input.toList();
+        var oxygenList = input.toList()
+        var co2List = input.toList()
 
         var oxygen = 0
         var co2 = 0
