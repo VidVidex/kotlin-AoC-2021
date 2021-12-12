@@ -37,3 +37,16 @@ fun createGrid(input: List<String>): Array<IntArray> {
 
     return grid
 }
+
+/**
+ * Checks is a string contains only uppercase letters
+ */
+fun String.isUpperCase(): Boolean {
+
+    val charArray = this.toCharArray()
+    for (c in charArray)
+        if (!c.isUpperCase())
+            return false
+
+    return true
+}
