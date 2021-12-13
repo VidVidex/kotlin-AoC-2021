@@ -50,3 +50,17 @@ fun String.isUpperCase(): Boolean {
 
     return true
 }
+
+/**
+ * Prints a 2D char array
+ */
+fun printGrid(grid: Array<CharArray>, rows: Int = grid.size, cols: Int = grid[0].size) {
+    for (row in 0 until rows) {
+        for (col in 0 until cols) {
+            print(grid[row][col])
+            print(" ")
+        }
+        println()
+    }
+    println()
+}
